@@ -1,0 +1,59 @@
+//菜单页面整体样式布局
+.menu{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	/*滚动条样式*/
+	::-webkit-scrollbar {/*滚动条整体样式*/
+		width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+		height: 4px;
+	}
+	::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+		border-radius: 5px;
+		-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+		background: #2d8cf0;
+	}
+	::-webkit-scrollbar-track {/*滚动条里面轨道*/
+		-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+		border-radius: 0;
+		background: rgba(0,0,0,0.1);
+	}
+	.menuTree{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 40%;
+		height: 95%;
+		overflow-y:scroll;
+		overflow-x: hidden;
+	}
+	.menuForm{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 40%;
+		height: 90%;
+		.cards{
+			height: 100%;
+			overflow-y:scroll;
+			overflow-x: hidden;
+			.ivu-card-head{
+				border-bottom: 1px solid #e8eaec;
+				padding: 14px 16px;
+				line-height: 1;
+				background: #FFFFFF;
+				z-index: 999;
+				position: fixed;
+				.title{
+					height: 30px;
+				}
+				Button{
+					float: right;
+				}
+			}
+			&-form{
+				margin-top:51.5px;
+			}
+		}
+	}
+}
